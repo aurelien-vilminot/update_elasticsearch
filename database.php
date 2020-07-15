@@ -57,8 +57,8 @@ abstract class Database {
      */
     private function getBdd() {
         if ($this->bdd == null) {
-            $dsn = 'mysql:host=vilminot.fr; dbname=viau8608_re';
-            $database = new PDO($dsn, 'viau8608_aurelien_re', '5YxZKb2Tsw3eKJAr');
+            $dsn = 'mysql:host=; dbname=';
+            $database = new PDO($dsn, '', '');
             $database->exec('SET CHARACTER SET utf8');
             $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
